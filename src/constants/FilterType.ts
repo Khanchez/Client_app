@@ -1,0 +1,16 @@
+export enum FILTER_TYPE {
+
+    NONE = 0,
+    EQUAL = 1,
+    NOT_EQUAL = 2,
+    LESS_THAN = 3,
+    LESS_THAN_OR_EQUAL = 4,
+    GREATER_THAN = 5,
+    GREATER_THAN_OR_EQUAL = 6,
+    BEGINS_WITH = 7,
+    DOES_NOT_BEGIN_WITH = 8,
+    ENDS_WITH = 9,
+    DOES_NOT_END_WITH = 10,
+    CONTAINS = 11,
+    DOES_NOT_CONTAIN = 12
+}

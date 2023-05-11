@@ -1,0 +1,66 @@
+    [
+      {
+        "id": 1,
+        "FirstName": "Иван",
+        "SecondName": "Иванов",
+        "LastName": "Олегович",
+        "Birthdate": "12.02.1995",
+        "Department": "IT"
+      },
+      {
+        "id": 2,
+        "FirstName": "Олег",
+        "SecondName": "Петров",
+        "LastName": "Петрович",
+        "Birthdate": "12.02.1995",
+        "Department": "IT"
+      },
+      {
+        "id": 3,
+        "FirstName": "Игорь",
+        "SecondName": "Сидоров",
+        "LastName": "Иванович",
+        "Birthdate": "12.02.1995",
+        "Department": "IT"
+      },
+      {
+        "id": 4,
+        "FirstName": "Наталья",
+        "SecondName": "Мотузко",
+        "LastName": "Максимовна",
+        "Birthdate": "12.02.1995",
+        "Department": "Отдел кадров"
+      },
+      {
+        "id":5,
+        "FirstName": "Илья",
+        "SecondName": "Курочкин",
+        "LastName": "Михайлович",
+        "Birthdate": "12.02.1995",
+        "Department": "Отдел кадров"
+      },
+      {
+        "id": 6,
+        "FirstName": "Владимир",
+        "SecondName": "Царь",
+        "LastName": "Николаевич",
+        "Birthdate": "12.02.1995",
+        "Department": "Менеджмент"
+      },
+      {
+        "id": 7,
+        "FirstName": "Михаил",
+        "SecondName": "Прохоров",
+        "LastName": "Владимирович",
+        "Birthdate": "12.02.1995",
+        "Department": "Менеджмент"
+      },
+      {
+        "id":8,
+        "FirstName": "Николай",
+        "SecondName": "Кукушкин",
+        "LastName": "Викторович",
+        "Birthdate": "12.02.1995",
+        "Department": "Менеджмент"
+      }
+    ]

@@ -1,0 +1,31 @@
+﻿.vitro-product-title:hover {
+    text-decoration: none;
+}
+
+.vitro-product-title img {
+    margin-left: 12px;
+    height: 26px;
+}
+
+.vitro-product-title div span {
+    font-size: 22px;
+    line-height: 22px;
+    display: block;
+}
+
+.vitro-table-view {
+    background: #fff;
+    height: 100%;
+}
+
+.vitro-table-view-detail {
+    padding: 0;
+}
+
+.vitro-control > .k-widget {
+    width: 100%;
+}
+
+.vitro-table-view-detail > div {
+    padding: 5px;
+}

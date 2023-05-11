@@ -1,0 +1,75 @@
+﻿{
+  "Cfg": {
+    "id": "vitro-table-view-list-item",
+    "Filtering": 0,
+    "Grouping": 1,
+    "Paging": 0,
+    "AllPages": 0,
+    "Editing": 1,
+    "FilterHidden": 0,
+    "Tag": "GRID",
+    "MaxHeight": "490",
+    "Height": "490",
+    "MinTagHeight": "490",
+    "MaxTagHeight": "490",
+    "ShowDeleted": "0",
+    "SuppressCfg": "0",
+    "AutoSort": "0",
+    "DateStrings": "1",
+    "ExternalAlign": "1",
+    "Style": "White",
+    "GroupTree": 1,
+    "GroupedLap": 0,
+    "MainCol": "TaskTitle",
+    "MaxVScroll": 490
+  },
+  "Panel": {
+    "Visible": 0
+  },
+  "Cols": [
+    {
+      "Name": "Panel",
+      "CanEdit": "0",
+      "CanSort": "0",
+      "WidthLap": "0",
+      "Width": 25,
+      "Visible": 1
+    },
+    {
+      "Name": "ItemTitle",
+      "CanEdit": "0",
+      "CanSort": "0",
+      "WidthLap": "0",
+      "RelWidth": 1,
+      "Wrap": 1
+    },
+    {
+      "Name": "CreatedAt",
+      "Width": 100,
+      "CanSort": "0",
+      "Align": "Right",
+      "Visible": 1
+    },
+    {
+      "Name": "Title",
+      "CanEdit": "0",
+      "CanSort": "0",
+      "WidthLap": "0",
+      "RelWidth": 1,
+      "Wrap": 1,
+      "Visible": 0
+    }
+  ],
+  "Header": {
+    "ItemTitle": "Название",
+    "CreatedAt": "Создан",
+    "Visible": 1
+  },
+  "Filter": {
+    "Visible": 0
+  },
+  "Toolbar": {
+    "Styles": "0",
+    "Visible": "0"
+  }
+}

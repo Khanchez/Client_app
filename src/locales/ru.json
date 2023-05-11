@@ -1,0 +1,104 @@
+﻿{
+  "app": {
+    "core": {
+      "logoutText": "Выход",
+      "title": "Vitro-CAD",
+      "yesText": "Да",
+      "noText": "Нет",
+      "commandMenu": {
+        "create": "Создать",
+        "edit": "Изменить",
+        "delete": "Удалить",
+        "restore": "Восстановить",
+        "eventList": "Аудит",
+        "report": {
+          "title": "Отчеты",
+          "print": "Печать",
+          "exportXlsx": "Экспорт в Excel"
+        },
+        "gantt": "Диаграмма Ганта"
+      },
+      "tableView": {
+        "action": {
+          "delete": {
+            "confirm": "Вы действительно хотите удалить выбранные элементы"
+          },
+          "change": {
+            "confirm": "Вы действительно хотите изменить значение поля '{{fieldName}}'?"
+          }
+        },
+        "col": {
+          "status": {
+            "1": "Активный",
+            "-1": "Удаленный"
+          }
+        }
+      },
+      "login": {
+        "title": "Вход в {{productTitle}}",
+        "description": "Для входа в аккаунт введите имя пользователя и пароль",
+        "placeholder": {
+          "name": "Введите адрес электронной почты",
+          "password": "Пароль"
+        },
+        "action": "Войти",
+        "forgotPassword": "Забыли пароль?",
+        "signup": {
+          "title": "Нет аккаунта?",
+          "register": "Зарегистрироваться"
+        }
+      },
+      "tableViewDetail": {
+        "field": {
+          "pik": {
+            "title": "Наименование",
+            "roleStr": "Роли в составе дисциплины",
+            "objectType": "Тип объекта проектирования",
+            "discipline": "Дисциплина",
+            "mainResultTask": "Вид основного результата",
+            "projectTaskExternal": "Вид проектной задачи 1С",
+            "code": "Шифр",
+            "shortName": "Краткое наименование",
+            "stage": "Стадия",
+            "comment": "Комментарий",
+            "category": "Категория"
+          },
+          "insertDate": "Дата создания",
+          "insertUserName": "Автор"
+        },
+        "auditData": "Автор: <strong>{{insertUser}}</strong>, {{insertDate, DD.MM.YYYY HH:mm}}. Изменил: <strong>{{updateUser}}</strong>, {{updateDate, DD.MM.YYYY HH:mm}}",
+        "selectedCount": "Выделено: {{count}}",
+        "action": {
+          "delete": "Удалить",
+          "clearSelection": "Снять выделение"
+        }
+      },
+      "audit": {
+        "tab": {
+          "item": "Элемент",
+          "before": "До",
+          "after": "После"
+        },
+        "eventType": "Тип события",
+        "insertDate": "Дата события",
+        "insertUserName": "Автор события"
+      }
+    },
+    "sidebar": {
+      "home": "Личный кабинет",
+      "esd": "ЕСД",
+      "objectTypeList": "Типы объектов",
+      "disciplineList": "Дисциплины",
+      "projectTaskExternalList": "Виды проектных задач 1С",
+      "mainResultTaskList": "Виды основных результатов",
+      "projectTaskList": "Виды проектных поручений",
+      "eventList": "Аудит",
+      "positions": "Должности",
+      "orgStructure": "ОШС",
+      "users": "Пользователи",
+      "planner": "План-графики",
+      "timesheets": "Списание времени",
+      "plannerTimesheets":  "Табель"
+    }
+  }
+}

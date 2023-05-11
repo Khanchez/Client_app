@@ -1,0 +1,65 @@
+{
+  "topItemList": [
+    {
+      "key": "top",
+      "itemList": [
+        {
+          "id": "Positions",
+          "text": "positions",
+          "icon": {
+            "defaultUrl": "icons/sidebar-list-item.svg",
+            "hoverUrl": "icons/sidebar-list-item-orange.svg"
+          },
+          "link": "/List/60982906-A570-4879-9DF7-00963C029F69"
+        },
+        {
+          "id": "OrgStructure",
+          "text": "orgStructure",
+          "icon": {
+            "defaultUrl": "icons/sidebar-list-item.svg",
+            "hoverUrl": "icons/sidebar-list-item-orange.svg"
+          },
+          "link": "/List/E3A94BDE-0CA9-456F-B338-4465D40389EE"
+        },
+        {
+          "id": "Users",
+          "text": "users",
+          "icon": {
+            "defaultUrl": "icons/sidebar-list-item.svg",
+            "hoverUrl": "icons/sidebar-list-item-orange.svg"
+          },
+          "link": "/List/07FB3185-BB91-4F3B-8D3D-AB6E87522658"
+        },
+        {
+          "id": "Planner",
+          "text": "planner",
+          "icon": {
+            "defaultUrl": "icons/sidebar-list-item.svg",
+            "hoverUrl": "icons/sidebar-list-item-orange.svg"
+          },
+          "link": "/List/6A54BC67-0A25-4A9D-AB1D-C22A16FB64E5"
+        },
+
+        {
+          "id": "Timesheets",
+          "text": "timesheets",
+          "icon": {
+            "defaultUrl": "icons/05_time.svg",
+            "hoverUrl": "icons/05_time_orange.svg"
+          },
+          "onClick": "showTimesheetsModal"
+        },
+
+        {
+          "id": "PlannerTimesheets",
+          "text": "plannerTimesheets",
+          "icon": {
+            "defaultUrl": "icons/06_tabel.svg",
+            "hoverUrl": "icons/06_tabel_orange.svg"
+          },
+          "onClick": "showPlannerTimesheetsModal"
+        }
+      ]
+    }
+  ]
+}

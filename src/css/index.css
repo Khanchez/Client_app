@@ -1,0 +1,1881 @@
+@font-face {
+    font-family: GraphikRegular;
+    src: local('GraphikLCG-Regular.ttf'), url(../fonts/GraphikLCG-Regular.ttf);
+}
+
+body {
+    overflow: hidden;    
+}
+
+@font-face {
+    font-family: GraphikMedium;
+    src: local('GraphikLCG-Medium.ttf'), url(../fonts/GraphikLCG-Medium.ttf);
+}
+
+@font-face {
+    font-family: GraphikBold;
+    src: local('GraphikLCG-Bold.ttf'), url(../fonts/GraphikLCG-Bold.ttf);
+}
+
+body {
+    font-family: "GraphikRegular", sans-serif;
+    font-size: 10pt;
+}
+
+.vitro-avatar {
+    line-height: 34px !important;
+    font-family: "GraphikRegular" !important;
+    font-size: 12pt;
+}
+
+.vitro-dialog-content {
+    min-width: 800px;
+    flex: 1 1;
+}
+
+body, input, textarea {
+    color: #222d44;
+}
+
+.vitro-message-input .vitro-icon-control div[contenteditable="true"] p {
+    margin: 0;
+    min-height: 19px;
+}
+
+.vitro-header .vitro-nav-bar .vitro-user-profile .dropdown-menu.show {
+    top: 30px !important;
+    width: 280px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+    .vitro-header .vitro-nav-bar .vitro-user-profile .dropdown-menu.show .dropdown-item {
+        align-items: center;
+        padding: 2px 6px;
+        justify-content: normal;
+        font-family: "GraphikRegular";
+    }
+
+        .vitro-header .vitro-nav-bar .vitro-user-profile .dropdown-menu.show .dropdown-item:hover {
+            color: #ff5b2d;
+        }
+
+            .vitro-header .vitro-nav-bar .vitro-user-profile .dropdown-menu.show .dropdown-item:hover > .vitro-icon.vitro-icon-hover {
+                display: block !important;
+            }
+
+            .vitro-header .vitro-nav-bar .vitro-user-profile .dropdown-menu.show .dropdown-item:hover > .vitro-icon.vitro-icon-default {
+                display: none !important;
+            }
+
+        .vitro-header .vitro-nav-bar .vitro-user-profile .dropdown-menu.show .dropdown-item > .vitro-icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 4px;
+        }
+
+.vitro-task-in-progress {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 10pt;
+    color: #BDBDBD;
+}
+
+    .vitro-task-in-progress.vitro-active {
+        color: #222d44;
+    }
+
+    .vitro-task-in-progress > div {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .vitro-task-in-progress span.vitro-delimiter {
+        color: #E0E0E0;
+        font-size: 10pt;
+        margin: 0 10px;
+    }
+
+    .vitro-task-in-progress > span.vitro-status {
+        margin: 0;
+    }
+
+    .vitro-task-in-progress img {
+        height: 22px;
+        width: 22px;
+        cursor: pointer;
+    }
+
+    .vitro-task-in-progress .vitro-task-title {
+        cursor: pointer;
+    }
+
+    .vitro-task-in-progress .vitro-timer {
+        font-size: 16pt;
+        color: #222d44;
+        font-family: "GraphikMedium";
+    }
+
+.vitro-planner-simple-page {
+    background: #F5F6FA;
+    display: flex;
+    height: 100%;
+    padding: 12px 6px;
+}
+
+    .vitro-planner-simple-page .vitro-planner-control-group {
+        margin: 0 6px;
+        padding: 24px;
+    }
+
+.vitro-task-tile.vitro-active {
+    background: #F5F6FA;
+}
+
+.vitro-task-tile .vitro-task-user-list {
+    margin: 16px 0 0 0;
+}
+
+.vitro-task-tile .vitro-task-tile-status-indicator {
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 4px;
+    right: 4px;
+}
+
+.vitro-task-tile .vitro-task-tile-expired-indicator {
+    width: 2px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    bottom: 4px;
+    background: #ff5b2d;
+}
+
+.vitro-planner-control-group {
+    width: 100%;
+    height: 100%;
+    margin: 0 2.5px;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+
+    .vitro-planner-control-group .ps {
+        margin-right: -25px;
+        padding-right: 25px;
+    }
+
+    .vitro-planner-control-group .vitro-task-tile {
+        margin: 0px;
+    }
+
+    .vitro-planner-control-group * + .vitro-task-tile {
+        margin-top: 8px;
+    }
+
+    .vitro-planner-control-group > .ps > div > .vitro-task-tile:last-child {
+        margin-bottom: 0px;
+    }
+
+    .vitro-planner-control-group .vitro-tab {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-right: -24px;
+    }
+
+        .vitro-planner-control-group .vitro-tab > div.nav {
+            margin-right: 24px;
+        }
+
+        .vitro-planner-control-group .vitro-tab > .vitro-content {
+            flex: 1 1;
+            display: flex;
+            overflow-y: hidden;
+        }
+
+        .vitro-planner-control-group .vitro-tab .vitro-content .ps {
+            width: 100%;
+            padding-right: 24px;
+            padding-top: 6px;
+            overflow-x: hidden !important;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .vitro-planner-control-group .vitro-tab > .vitro-content > .ps > div {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+.vitro-task-detail.vitro-task-file-list > .vitro-content {
+    height: auto;
+    flex: initial;
+}
+
+.vitro-task-detail.vitro-task-file-list > .vitro-bottom {
+    flex: 1 1;
+}
+
+.vitro-task-detail .vitro-content input[disabled], .vitro-task-detail .vitro-content textarea[disabled], .vitro-task-detail .vitro-content input[readonly], .vitro-task-detail .vitro-content textarea[readonly] {
+    background: #F5F6FA !important;
+}
+
+.vitro-task-detail > .vitro-bottom {
+    margin-right: 24px;
+}
+
+.vitro-task-labor-complex .vitro-label {
+    width: 128px !important;
+    margin-left: 8px;
+}
+
+.vitro-task-labor-complex .vitro-control {
+    width: 100px;
+}
+
+.vitro-task-labor-complex .vitro-flex {
+    flex-wrap: wrap;
+}
+
+    .vitro-task-labor-complex .vitro-flex > * {
+        flex: 1 1 260px;
+    }
+
+.vitro-task-labor-complex .row .vitro-label {
+    margin-left: 16px;
+}
+
+.vitro-task-labor-complex .vitro-title {
+    line-height: 32px;
+}
+
+.vitro-task-view-select {
+    display: flex;
+    justify-content: center;
+    font-size: 12pt;
+    flex-wrap: wrap;
+}
+
+    .vitro-task-view-select > div {
+        position: relative;
+        margin: 0 16px;
+    }
+
+        .vitro-task-view-select > div > .vitro-dropdown-button button {
+            color: #bdbdbd !important;
+            font-family: "GraphikRegular" !important;
+        }
+
+            .vitro-task-view-select > div > .vitro-dropdown-button button > span {
+                display: block;
+                text-align: center;
+            }
+
+.vitro-dropdown-button > .dropdown > button > svg {
+    fill: #e0e0e0 !important;
+}
+
+.vitro-message-input .vitro-icon {
+    cursor: pointer;
+}
+/* timer */
+.vitro-timer {
+    display: flex;
+    align-items: center;
+}
+
+    .vitro-timer span.vitro-delimiter {
+        margin-right: 8px;
+    }
+
+    .vitro-timer span:not(.vitro-delimiter) {
+        width: 100px;
+    }
+
+.vitro-header {
+    z-index: 1000;
+    background: #f5f6fa;
+}
+
+    .vitro-header .vitro-nav-bar {
+        background: #fff;
+        border-top: 1px solid #e0e0e0;
+        height: 82px;
+        border-bottom: 1px solid #e0e0e0;
+        justify-content: normal;
+        padding: 0 36px 0 20px;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .vitro-header .vitro-right {
+        padding-right: 0;
+        display: flex;
+        align-items: center;
+    }
+
+        .vitro-header .vitro-right .navbar-nav {
+            flex-direction: row;
+        }
+
+    .vitro-header .vitro-nav-service {
+        height: auto;
+        min-height: 32px;
+        padding: 0 36px 0 26px;
+    }
+
+        .vitro-header .vitro-nav-service .vitro-customer-logo {
+            background: url('../img/customer-logo.svg') no-repeat;
+            height: 33px;
+            min-width: 34px;
+            margin-top: 1px;
+        }
+
+.vitro-expand > .vitro-title {
+    padding-top: 2px;
+}
+
+.vitro-planner-control-group > .ps > div > .vitro-expand > .vitro-title {
+    padding-top: 0px;
+}
+
+.toggled.pinned .vitro-nav-bar .vitro-nav-bar-sidebar-button, a.nav-link {
+    color: #bdbdbd !important;
+}
+
+.vitro-product-title {
+    text-decoration: none !important;
+    align-items: center;
+}
+
+
+
+    .vitro-product-title img {
+        height: 42px;
+        margin-left: 14px;
+        margin-right: 4px;
+    }
+
+    .vitro-product-title > h1 {
+        font-family: GraphikBold;
+        font-size: 22px;
+        line-height: 20px;
+        color: #2e2e2e;
+        display: block;
+        text-decoration: none;
+        text-shadow: 0 1px 1px #9e9e9e;
+        width: 160px;
+        overflow-wrap: break-word;
+        margin: 0;
+    }
+
+.vitro-page.vitro-minified-header .vitro-nav-bar {
+    height: 50px;
+}
+
+.vitro-page.vitro-minified-header .vitro-product-title img {
+    height: 28px;
+}
+
+.vitro-header .vitro-nav-bar .vitro-user-profile div > span {
+    padding-right: 14px !important;
+    font-family: "GraphikMedium";
+    color: #222d44 !important;
+    white-space: nowrap;
+}
+
+.vitro-header .vitro-right > div.vitro-button-notification {
+    margin-right: 20px;
+}
+
+.vitro-button-notification div {
+    background: #ff5d2f;
+}
+/* sidebar */
+.vitro-sidebar {
+    top: 0;
+    z-index: 900 !important;
+    padding-top: 125px ;
+}
+
+.vitro-page:not(.vitro-sidebar-hovered) .vitro-sidebar ul li a {
+    padding: 7pt 0 !important;
+}
+
+.vitro-page .vitro-sidebar ul li a:hover {
+    background: #fff;
+}
+
+.vitro-page:not(.toggled) .vitro-header .vitro-nav-bar .vitro-nav-bar-sidebar-button {
+    background: #F5F6FA;
+}
+
+.vitro-sidebar > ul > li > ul > li:hover .vitro-icon-text, .vitro-sidebar > ul > li > ul > li:hover .vitro-item-text, .vitro-sidebar > ul > li > ul > li > a.vitro-active .vitro-icon-text, .vitro-sidebar > ul > li > ul > li > a.vitro-active .vitro-item-text {
+    color: #FF5B2D !important;
+}
+
+.vitro-sidebar > ul > li .vitro-icon-text, .vitro-sidebar ul li a .vitro-item-text {
+    color: #222d44 !important;
+    font-family: "GraphikRegular";
+    font-size: 9pt;
+}
+
+.vitro-sidebar > ul > li .vitro-icon-text {
+    margin: 4px 0 9px 0;
+}
+
+.vitro-sidebar ul li a .vitro-item-text {
+    font-size: 9pt;
+}
+
+.vitro-main > div {
+    background: #f5f6fa;
+}
+/* tab */
+.vitro-tab .nav {
+    border: none;
+}
+
+    .vitro-tab .nav > div.vitro-item:not(:first-child) {
+        border: none;
+    }
+
+.vitro-dropdown-button {
+    font-family: "GraphikMedium";
+}
+
+.dropdown-item.dropdown-item-empty {
+    color: #bdbdbd !important;
+}
+
+.vitro-progress-bar .vitro-dropdown-button .dropdown-item .vitro-text {
+    color: #828282;
+}
+
+.dropdown-menu {
+    box-shadow: 0px 0px 50px 0px #e0e0e0;
+    box-shadow: 0 0 50px 0 rgb(82 63 105 / 15%);
+    width: 234px;
+}
+
+.vitro-tab .nav > div .nav-item a {
+    font-size: 12pt;
+    font-family: "GraphikMedium";
+    height: 40px;
+    line-height: 22px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+    .vitro-tab .nav > div .nav-item a:hover {
+        color: #0097ff !important;
+    }
+
+    .vitro-tab .nav > div .nav-item a span {
+        align-items: center;
+    }
+
+.vitro-tab .nav > div .nav-item.active a {
+    color: #0097ff !important;
+    border-bottom: 3px solid #0097ff;
+}
+
+.vitro-tab .nav > .vitro-dropdown-button {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.vitro-tab .nav > div .active span {
+    font-weight: 500;
+}
+
+.vitro-control input, .vitro-control textarea, .vitro-control select {
+    display: block;
+    background: #fff;
+    border: 1px solid #e0e0e0 !important;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.vitro-control .vitro-icon-control {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.vitro-control .vitro-date-input, .vitro-control > input {
+    height: 32px;
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 6px;
+}
+
+.vitro-control-row .vitro-label {
+    width: 136px;
+}
+
+.vitro-command-menu {
+    background: #F5F6FA;
+    font-size: 10pt;
+    height: auto;
+    margin-bottom: 6px;
+}
+
+    .vitro-command-menu ul.nav {
+        flex-wrap: wrap;
+    }
+
+    .vitro-command-menu > ul.nav > li {
+        margin: 6px 0 0 6px;
+    }
+
+    .vitro-command-menu .dropdown-menu.show {
+        border: none;
+    }
+
+    .vitro-command-menu .vitro-item {
+        align-items: center;
+        padding: 2px 3px 2px 4px;
+        font-family: "GraphikMedium";
+        border: 1px solid #e0e0e0 !important;
+        color: #222d44;
+    }
+
+    .vitro-command-menu .dropdown-item {
+        outline: none;
+        color: #222d44 !important;
+    }
+
+    .vitro-command-menu .vitro-item > .vitro-icon {
+        width: 16px;
+        height: 16px;
+        margin: 0px 5px 1px 4px
+    }
+
+    .vitro-command-menu .vitro-item img {
+        height: 15px;
+        margin: 0 5px;
+    }
+
+    .vitro-command-menu .vitro-command-menu-button {
+        font-family: "GraphikMedium";
+        border: 1px solid #e0e0e0 !important;
+        color: #222d44;
+        line-height: 21px;
+        height: 26px;
+        padding: 0;
+        background: #fff;
+        border-radius: 4px;
+    }
+
+        .vitro-command-menu .vitro-command-menu-button > div {
+            padding: 2px 9px 2px 5px;
+        }
+
+            .vitro-command-menu .vitro-command-menu-button > div .vitro-icon {
+                margin: 0 6px 1px 4px
+            }
+
+        .vitro-command-menu .vitro-command-menu-button .vitro-effect-ripple {
+            display: none;
+        }
+
+        .vitro-command-menu .vitro-item:hover, .vitro-command-menu .dropdown .dropdown-toggle:hover, .vitro-command-menu .vitro-command-menu-button:hover {
+            color: #FF5B2D;
+        }
+
+            .vitro-command-menu .vitro-item:hover svg path, .vitro-command-menu .nav-item .dropdown-toggle:hover .vitro-item .vitro-icon.vitro-icon-default,
+            .vitro-command-menu .vitro-command-menu-button:hover .vitro-icon.vitro-icon-default {
+                display: none;
+            }
+
+            .vitro-command-menu .vitro-item:hover svg path, .vitro-command-menu .nav-item .dropdown-toggle:hover .vitro-item .vitro-icon.vitro-icon-hover,
+            .vitro-command-menu .vitro-command-menu-button:hover .vitro-icon.vitro-icon-hover {
+                display: block !important;
+            }
+
+            .vitro-command-menu .vitro-item:hover svg path, .vitro-command-menu .nav-item .dropdown-toggle:hover .vitro-item svg path {
+                stroke: #FF5B2D;
+            }
+
+    .vitro-command-menu .dropdown .dropdown-item span {
+        font-family: "GraphikRegular";
+        font-size: 10pt;
+    }
+
+::-webkit-input-placeholder {
+    font-size: 10pt;
+    color: #E0E0E0;
+    font-weight: normal;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    font-size: 10pt;
+    color: #E0E0E0;
+    font-weight: normal;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+    font-size: 10pt;
+    color: #E0E0E0;
+    font-weight: normal;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    font-size: 10pt;
+    color: #E0E0E0;
+    font-weight: normal;
+}
+
+.handle-bar.vertical {
+    background: #F5F6FA;
+}
+
+.handle-bar_drag {
+    background: url(../img/ico-separator-2.svg) #ff5b2d center no-repeat;
+    width: 6px !important;
+    height: 40px !important;
+}
+
+.vitro-table-view {
+    background: #fff;
+    border-radius: 8px;
+    padding: 6px 0;
+    position: relative;
+}
+
+.vitro-table-view-detail {
+    padding: 0px;
+}
+
+    .vitro-table-view-detail .vitro-planner-control-group {
+        margin: 0px;
+    }
+
+.pane.vertical {
+    background: #fff;
+    border-radius: 8px;
+}
+
+.vitro-command-menu .vitro-item {
+    line-height: 21px;
+    padding: 2px 9px 2px 9px;
+}
+
+    .vitro-command-menu .vitro-item .vitro-icon {
+        margin: -1px 6px 0 0;
+    }
+
+    .vitro-command-menu .vitro-item:hover {
+        border: 1px solid #ff5b2d;
+    }
+
+.vitro-nav-bar-sidebar-button svg {
+    fill: #BDBDBD;
+}
+
+.vitro-activity .preview-roller-wrapper {
+    height: 100px;
+    position: relative;
+}
+
+.vitro-activity .vitro-item .vitro-title span, .vitro-expand > .vitro-title, .vitro-progress-bar .vitro-dropdown-button .vitro-text, .vitro-task-in-progress > span.vitro-status, .vitro-activity .vitro-item span.vitro-due-date {
+    font-family: "GraphikRegular";
+}
+
+.vitro-task-tile > .vitro-title, .vitro-activity .vitro-item .vitro-title span, .vitro-expand > .vitro-title, .vitro-activity > .vitro-title {
+    font-family: "GraphikMedium";
+}
+
+.vitro-command-menu .vitro-item > span {
+    line-height: 10px;
+}
+
+.vitro-dialog {
+    background: rgba(34, 45, 68, .2);
+}
+
+    .vitro-dialog > div {
+        opacity: 1;
+        padding: 32px 48px;
+        border-radius: 8px;
+        min-height: 400px;
+        width: 760px;
+    }
+
+        .vitro-dialog > div.modal-dialog {
+            width: auto;
+            min-width: 760px;
+        }
+
+        .vitro-dialog > div.modal-dialog {
+            min-width: auto !important;
+        }
+
+        .vitro-dialog > div .vitro-dialog-header {
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+    .vitro-dialog .vitro-dialog-content {
+        overflow: visible;
+        max-height: none !important;
+    }
+
+    .vitro-dialog .vitro-alert {
+        margin-bottom: 6px !important;
+        top: 0 !important;
+        left: 0 !important;
+        transform: none !important;
+    }
+
+    .vitro-dialog .vitro-tab .vitro-dialog-content {
+        overflow: visible;
+        margin-bottom: 42px;
+        flex: none;
+    }
+
+    .vitro-dialog .vitro-tab > .vitro-content {
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+.vitro-time-log-history {
+    height: 342px;
+}
+
+    .vitro-time-log-history .vitro-task-tile:first-child {
+        margin-top: 0px;
+    }
+
+.vitro-dialog .vitro-tab > .vitro-content .vitro-dialog-content .vitro-time-log-history .ps,
+.vitro-timesheet > .ps {
+    position: relative;
+    margin-right: -16px;
+    padding-right: 16px;
+}
+
+.vitro-dialog .vitro-tab > .vitro-content .vitro-dialog-content .ps object {
+    display: none !important;
+}
+
+.vitro-dialog .vitro-tab > .vitro-content > .vitro-dialog-footer {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.vitro-control {
+    position: relative;
+    padding: 6px 0;
+}
+
+.vitro-control-row > span {
+    display: block;
+    margin: 0 5px;
+}
+
+.vitro-button, .vitro-dialog-button {
+    height: 32px;
+    line-height: 32px;
+    background: #0097ff;
+    color: #fff;
+    width: auto;
+    padding: 0 12px;
+    min-width: 96px;
+    margin: 8px 0 0 8px;
+}
+
+    .vitro-button:disabled, .vitro-dialog-button:disabled {
+        background: #E0E0E0;
+    }
+
+.vitro-page.pinned:not(.vitro-sidebar-hovered) .vitro-sidebar, .vitro-sidebar ul li a div {
+    width: 72px;
+}
+
+.vitro-page.toggled.pinned .vitro-main, .vitro-page.toggled.pinned .vitro-footer {
+    padding-left: 72px;
+}
+
+.vitro-product-title img {
+    margin-left: 20px;
+}
+
+.vitro-text-align-left {
+    text-align: left;
+}
+
+.vitro-text-align-right {
+    text-align: right;
+}
+
+td.vitro-text-align-right {
+    min-width: 52px;
+}
+
+.vitro-text-align-center {
+    text-align: center;
+}
+
+.vitro-color-red {
+    color: #ff5b2d !important;
+}
+
+/* dialog */
+.vitro-dialog > div {
+    padding: 16px 24px;
+}
+
+.vitro-dialog-content {
+    min-width: auto;
+}
+
+.vitro-dialog .vitro-dialog-button-close {
+    width: 32px;
+    height: 32px;
+    right: -48px;
+    top: 2px;
+    width: auto !important;
+    cursor: pointer;
+}
+
+    .vitro-dialog .vitro-dialog-button-close svg {
+        width: 32px;
+        height: 33px;
+        stroke: #F5F6FA;
+        stroke-width: 2px;
+    }
+
+.vitro-dialog > div > .vitro-dialog-footer {
+    position: absolute;
+    bottom: 16px;
+    right: 24px;
+}
+
+.vitro-dialog > div > .vitro-dialog-content {
+    overflow: inherit;
+    margin-bottom: 48px;
+}
+
+.vitro-timesheet {
+    font-size: 9pt;
+    margin-bottom: 16px;
+    height: 360px;
+}
+
+    .vitro-timesheet h4 {
+        font-size: 16px;
+    }
+
+    .vitro-timesheet h5 {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .vitro-timesheet table {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .vitro-timesheet tr.vitro-underline {
+        border-bottom: 1px solid #e0e0e0 !important
+    }
+
+.vitro-timesheet-resource {
+    max-width: 450px;
+}
+
+.vitro-task-rating {
+    width: 100%;
+}
+
+    .vitro-task-rating .vitro-task-title {
+        margin: 4px 0 12px 0;
+        color: #ff5b2d;
+    }
+
+    .vitro-task-rating .vitro-task-rating-prompt .vitro-icon {
+        width: 28px;
+        float: left;
+        height: 28px;
+        margin: 4px 6px 0 0;
+    }
+
+.vitro-task-detail-rating {
+    width: 100%;
+}
+
+    .vitro-task-detail-rating span {
+        display: block;
+        margin-bottom: 24px;
+    }
+
+    .vitro-task-rating .jq-ry-container, .vitro-task-detail-rating .jq-ry-container {
+        padding: 0px;
+        margin: 4px 0;
+    }
+
+    .vitro-task-rating .vitro-control, .vitro-task-detail-rating .vitro-control {
+        margin: 12px 0 2px 0;
+    }
+
+.vitro-dropdown-button .vitro-dropdown-button-item-overflow {
+    padding: 0 0 0 6px;
+    font-size: 8pt;
+    color: #bdbdbd;
+}
+
+    .vitro-dropdown-button .vitro-dropdown-button-item-overflow .vitro-icon {
+        margin-left: 6px;
+    }
+
+    .vitro-dropdown-button .vitro-dropdown-button-item-overflow:hover {
+        color: #bdbdbd;
+        text-decoration: underline;
+    }
+
+    .vitro-dropdown-button .vitro-dropdown-button-item-overflow > span {
+        padding-left: 6px;
+    }
+
+    .vitro-dropdown-button .vitro-dropdown-button-item-overflow .vitro-icon {
+        margin-right: 0;
+    }
+
+.vitro-activity-status-changed p {
+    font-style: normal;
+    color: #27ae60 !important;
+    font-weight: 600;
+}
+
+.vitro-activity-user-changed {
+    font-style: italic;
+}
+
+.vitro-user-name, .vitro-user-name-deleted {
+    color: #0097ff !important;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.vitro-user-name-deleted {
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.vitro-activity-file-added a, .vitro-activity-file-deleted a {
+    color: #0097ff;
+    cursor: pointer;
+}
+
+.vitro-activity-file-deleted a {
+    text-decoration: line-through;
+}
+
+.dropdown-menu a.dropdown-item, .dropdown-menu a.dropdown-item:focus, .vitro-expand > .vitro-title, .vitro-task-tile > .vitro-description, .vitro-task-tile > .vitro-title, .vitro-task-in-progress > span.vitro-status, .vitro-activity .vitro-item .vitro-title span, .vitro-task-user-list .vitro-item .vitro-title span, .vitro-task-in-progress > span.vitro-status, .vitro-header .vitro-nav-bar .vitro-user-profile div > span, .vitro-tab .nav > div .nav-item a, .vitro-timer {
+    font-family: "GraphikMedium"
+}
+
+/* emodal */
+.vitro-modal.fade {
+    display: none !important;
+}
+
+.vitro-dialog.fade.show {
+    display: flex !important;
+}
+
+.modal-backdrop.show {
+    opacity: 0;
+}
+
+.modal-content {
+    border: none;
+    margin-bottom: -14px;
+    margin-left: 1px;
+}
+
+.modal-dialog {
+    max-height: max-content !important;
+}
+
+.vitro-task-file-upload-zone {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.vitro-task-file-list .vitro-task-file-upload-zone > div:first-child {
+    margin: 24px 0;
+}
+
+.vitro-task-file-upload-zone > div:last-child {
+    flex: 1 1;
+}
+
+.vitro-task-file-upload-zone > div {
+    text-align: center;
+    font-size: 10pt;
+    padding: 8px;
+    border-radius: 8px;
+    background: #F5F6FA;
+    color: #bdbdbd;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    .vitro-task-file-upload-zone > div img {
+        width: 150px;
+        height: 80px;
+        margin: 18px 0;
+    }
+
+.vitro-input-upload-file {
+    height: 24px;
+}
+
+    .vitro-input-upload-file input {
+        display: none;
+    }
+
+    .vitro-input-upload-file label {
+        margin-bottom: 0px;
+    }
+
+/* alert */
+.vitro-alert {
+    box-shadow: 0 4px 16px #bdbdbd;
+    border-radius: 4px;
+    padding: 16px;
+}
+
+    .vitro-alert.vitro-alert-position-center {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .vitro-alert .alert-content {
+        align-items: start;
+    }
+
+        .vitro-alert .alert-content .vitro-alert-close-button {
+            padding: 0px;
+        }
+
+            .vitro-alert .alert-content .vitro-alert-close-button > svg {
+                width: 10px;
+                height: 10px;
+                stroke: #222d44;
+            }
+
+    .vitro-alert > div.alert-content {
+        height: auto;
+    }
+
+        .vitro-alert > div.alert-content > .icon {
+            margin: 0 12px 0 0;
+        }
+
+    .vitro-alert .alert-content .text {
+        margin: 4px 0 3px 0;
+        line-height: 20px;
+    }
+
+        .vitro-alert .alert-content .text p {
+            margin: 0px;
+        }
+
+        .vitro-alert .alert-content .text strong {
+            display: block;
+        }
+
+    .vitro-alert.alert-danger {
+        background-color: #fff !important;
+        border-left: 4px solid #ff5b2d;
+        color: #222d44;
+    }
+
+    .vitro-alert.alert-success {
+        background-color: #fff !important;
+        border-left: 4px solid #27ae60;
+        color: #222d44;
+    }
+
+    .vitro-alert.alert-warning {
+        background-color: #fff !important;
+        border-left: 4px solid #bdbdbd;
+        color: #222d44;
+    }
+
+.vitro-activity-load-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    color: #bdbdbd;
+}
+
+.vitro-activity > .vitro-title .vitro-dropdown-button {
+    position: absolute;
+    right: 0;
+}
+
+.vitro-placeholder-required {
+    color: #ff5b2d;
+    margin-left: 2px;
+}
+
+.vitro-uploaded-file-list {
+    list-style: none;
+    margin: 0;
+}
+
+    .vitro-uploaded-file-list li {
+        align-items: center;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 2px;
+    }
+
+        .vitro-uploaded-file-list li svg {
+            width: 12px;
+            height: 12px;
+            cursor: pointer;
+        }
+
+            .vitro-uploaded-file-list li svg > * {
+                stroke: #222d44;
+            }
+
+.vitro-activity .vitro-item.vitro-active {
+    background: #F5F6FA;
+}
+
+.vitro-lookup-picker.vitro-command-menu-lookup-picker > div.vitro-content > .vitro-right svg path, .vitro-command-menu .nav-item .dropdown-toggle .vitro-item svg path {
+    stroke: #222d44;
+}
+
+.vitro-timesheet .vitro-summary-table-mobile {
+    display: none;
+}
+
+    .vitro-timesheet .vitro-summary-table-mobile th.vitro-text-align-right {
+        padding-left: 8px;
+    }
+
+/* mobile screens */
+@media (max-width: 800px) {
+    .vitro-dialog > div {
+        width: calc(100% - 16px);
+    }
+
+    .vitro-task-detail-button-close {
+        display: block !important;
+    }
+
+    .vitro-page.toggled.pinned .vitro-sidebar {
+        border-right: 1px solid #F5F6FA
+    }
+
+    .vitro-page.toggled.pinned .vitro-main {
+        padding-left: 0px;
+    }
+
+    .vitro-header .vitro-nav-bar,
+    .vitro-header .vitro-nav-service {
+        padding-right: 20px;
+    }
+
+    .vitro-task-view-select > div {
+        display: flex;
+        justify-content: center;
+    }
+
+        .vitro-task-view-select > div > .vitro-dropdown-button button > span {
+            min-width: 130px;
+        }
+
+    .vitro-timesheet {
+        height: 70vh;
+    }
+
+        .vitro-timesheet .vitro-summary-table-desktop {
+            display: none;
+        }
+
+        .vitro-timesheet .vitro-summary-table-mobile {
+            display: inline-table;
+        }
+
+    .vitro-task-in-progress .vitro-timer {
+        flex: 1 1;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 650px) {
+    .vitro-dialog .vitro-dialog-button-close {
+        display: none;
+    }
+}
+
+@media (max-width: 590px) {
+    .vitro-product-title img {
+        height: 38px;
+    }
+
+    .vitro-task-view-select {
+        font-size: 11pt;
+    }
+
+    .vitro-header .vitro-nav-bar .vitro-user-profile div > span {
+        display: none;
+    }
+
+    .vitro-task-in-progress {
+        font-size: 9pt;
+    }
+
+        .vitro-task-in-progress .vitro-timer {
+            font-size: 14pt;
+        }
+
+    .vitro-timer span:not(.vitro-delimiter) {
+        width: 90px;
+    }
+
+    .vitro-task-in-progress img {
+        width: 20px;
+    }
+
+    .vitro-dropdown-button .vitro-dropdown-button-item-overflow > span {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .vitro-product-title img {
+        height: 34px;
+    }
+
+    .vitro-task-view-select > div {
+        margin: 0 8px;
+    }
+
+    .vitro-product-title h1 {
+        display: none;
+    }
+}
+
+@media (max-width: 480px), (max-height: 768px) {
+    .vitro-task-file-upload-zone {
+        flex-wrap: wrap;
+    }
+
+        .vitro-task-file-upload-zone > div img {
+            width: 75px;
+            height: 40px;
+            margin: 8px 0;
+        }
+}
+
+@media (max-width: 360px) {
+    .vitro-product-title img {
+        height: 28px;
+    }
+
+    .vitro-task-in-progress .vitro-task-title .vitro-delimiter,
+    .vitro-task-in-progress .vitro-task-status .vitro-delimiter {
+        display: none;
+    }
+
+    .vitro-header .vitro-nav-bar {
+        padding: 0 12px 0 20px;
+    }
+}
+
+@media (max-width: 340px) {
+    .vitro-product-title img {
+        display: none;
+    }
+}
+
+.vitro-task-detail-favorite-button {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 28px;
+    cursor: pointer;
+    height: 28px;
+}
+
+    .vitro-task-detail-favorite-button:hover .vitro-icon.vitro-icon-default {
+        display: none;
+    }
+
+    .vitro-task-detail-favorite-button:hover .vitro-icon.vitro-icon-hover {
+        display: block !important;
+    }
+
+    .vitro-task-detail-favorite-button .vitro-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+.vitro-task-detail-button-close {
+    display: none;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 18px;
+    cursor: pointer;
+}
+
+    .vitro-task-detail-button-close svg {
+        stroke: #222d44;
+    }
+
+.vitro-table-view-status .vitro-status {
+    border-radius: 50%;
+    display: inline-block;
+    min-height: 12px;
+    min-width: 12px;
+    height: 12px;
+    width: 12px;
+    vertical-align: sub;
+    margin-right: 6px;
+    border: 1px solid transparent;
+}
+
+.TWEnumHeaderLeft .vitro-table-view-status > span:not(.vitro-status) {
+    display: none;
+}
+
+.vitro-action-handler > div {
+    /*max-width: 240px;*/
+    border: 1px solid #ff5b2d;
+}
+
+    .vitro-action-handler .bs-popover-top > .arrow:before, .vitro-action-handler > div > .arrow:before {
+        border-top-color: #ff5b2d;
+    }
+
+.vitro-icon-before,
+.vitro-icon-error,
+.vitro-icon-progress,
+.vitro-icon-success {
+    padding-right: 32px;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.vitro-icon-before {
+    background: url('../img/ico-question.svg');
+    background-size: cover;
+}
+
+.vitro-icon-progress {
+    background: url('../img/ico-preloader.svg');
+    background-size: cover;
+}
+
+.vitro-icon-error {
+    background: url('../img/ico-error.svg');
+    background-size: cover;
+}
+
+.vitro-icon-success {
+    background: url('../img/ico-success.svg');
+    background-size: cover;
+}
+
+.vitro-center {
+    flex: 1 1;
+}
+
+.vitro-button-group > .vitro-button:first-child {
+    margin-left: 0px;
+}
+
+.vitro-table-view .TWClassReadOnly .vitro-readonly-cell {
+    color: #BDBDBD;
+}
+
+.vitro-table-view .vitro-editable-cell {
+    font-weight: bold;
+}
+
+.vitro-control-progress {
+    top: 10px;
+    right: 3px;
+    position: absolute;
+    background: white;
+    z-index: 100;
+}
+
+    .vitro-control-progress .vitro-icon,
+    .vitro-control-progress .preview-roller-wrapper,
+    .vitro-control-progress .preview-roller-wrapper .preview-roller {
+        width: 24px;
+        height: 24px;
+    }
+
+.vitro-task-detail-group .vitro-title {
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    font-family: 'GraphikMedium';
+    color: #0097ff;
+    text-align: center;
+    border-bottom: 2px solid #0097ff;
+}
+
+.vitro-task-detail-group .vitro-dropdown-button {
+    flex-direction: row-reverse;
+}
+
+    .vitro-task-detail-group .vitro-dropdown-button .vitro-text {
+        color: #bdbdbd;
+        font-family: 'GraphikRegular';
+    }
+
+.vitro-lookup-picker > div.vitro-content > .vitro-selected-item > svg,
+.vitro-lookup-picker > div.vitro-content > div.vitro-right > div.vitro-close > svg {
+    stroke: #ff5b2d;
+    stroke-width: 4 !important;
+}
+
+
+.vitro-page-view-select {
+    display: flex;
+}
+
+    .vitro-page-view-select .vitro-item {
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        margin-right: 16px;
+    }
+
+        .vitro-page-view-select .vitro-item span {
+            display: block;
+            margin-left: 4px;
+            color: #bdbdbd;
+        }
+
+        .vitro-page-view-select .vitro-item:hover span {
+            color: #FF5B2D
+        }
+
+        .vitro-page-view-select .vitro-item:hover .vitro-icon-default {
+            display: none;
+        }
+
+        .vitro-page-view-select .vitro-item:hover .vitro-icon-hover {
+            display: block !important;
+        }
+
+        .vitro-page-view-select .vitro-item .vitro-icon {
+            width: 16px;
+            height: 16px;
+        }
+
+.vitro-search {
+    display: flex;
+    align-items: center;
+    margin: 0 16px;
+    height: 32px;
+    padding: 8px;
+    border: 1px solid #fff !important;
+    border-radius: 6px;
+}
+
+    .vitro-search.vitro-active {
+        border: 1px solid #e0e0e0 !important;
+    }
+
+    .vitro-search .vitro-search-control {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .vitro-search:not(.vitro-active) .vitro-search-control {
+        opacity: 0;
+    }
+
+        .vitro-search:not(.vitro-active) .vitro-search-control input {
+            display: none;
+        }
+
+    .vitro-search .vitro-search-control input {
+        width: 100%;
+        border: none;
+    }
+
+    .vitro-search svg {
+        cursor: pointer;
+        width: 10px;
+        height: 10px;
+        stroke: #ff5b2d;
+        stroke-width: 3px;
+    }
+
+    .vitro-search .vitro-search-button {
+        margin-left: 10px;
+    }
+
+        .vitro-search .vitro-search-button .vitro-icon {
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+        }
+
+.vitro-keyword-highlight {
+    color: #ff5b2d;
+}
+
+.vitro-button {
+    position: relative !important;
+    padding: 0;
+}
+
+    .vitro-button > div {
+        border-radius: 8px;
+        padding: 0 12px;
+    }
+
+    .vitro-button:not(:disabled):active, .vitro-button:not(:disabled):focus, .vitro-button:not(:disabled):hover {
+        background: rgba(0, 151, 255, .8);
+        border-color: transparent;
+    }
+
+    .vitro-button.vitro-command-menu-button:hover,
+    .vitro-button.vitro-command-menu-button:active,
+    .vitro-button.vitro-command-menu-button:focus {
+        background: #fff;
+    }
+
+    .vitro-button:not(:disabled):focus:before {
+        opacity: .2;
+        visibility: visible;
+    }
+
+    .vitro-button.vitro-command-menu-button:focus:before {
+        visibility: hidden;
+    }
+
+    .vitro-button:before {
+        content: '';
+        position: absolute;
+        border: 2px solid #0097ff;
+        border-radius: 10px;
+        left: -5px;
+        right: -5px;
+        top: -5px;
+        bottom: -5px;
+        opacity: 0;
+        visibility: hidden;
+        transition: .1s;
+    }
+
+    .vitro-button.vitro-button-close {
+        background: #fff;
+        color: #0097ff;
+        border: 1px solid #0097ff;
+    }
+
+        .vitro-button.vitro-button-close:not(:disabled):active, .vitro-button.vitro-button-close:not(:disabled):focus, .vitro-button.vitro-button-close:not(:disabled):hover {
+            background: #fff;
+            border-color: rgba(0, 151, 255, .8);
+            color: rgba(0, 151, 255, .8);
+        }
+
+span.vitro-effect-ripple {
+    background-color: #0097ff;
+}
+
+.vitro-button-close span.vitro-effect-ripple {
+    background-color: rgba(0, 151, 255, .4);
+}
+
+.vitro-lookup-picker > div.vitro-value-list .vitro-placeholder-empty {
+    display: block;
+    text-align: center;
+}
+
+.vitro-placeholder-empty > .vitro-icon {
+    margin: 4px auto;
+    width: 26px;
+    height: 26px;
+}
+
+.vitro-placeholder-empty > span.vitro-title {
+    display: block;
+    font-family: "GraphikMedium";
+    color: #bdbdbd;
+}
+
+.vitro-placeholder-empty > span.vitro-content {
+    display: block;
+    font-family: "GraphikRegular";
+    color: #bdbdbd;
+}
+
+#TableViewDetail, #TableView, .vitro-table-view {
+    height: 100%;
+}
+
+#TableView {
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.vitro-table-view {
+    background: #fff;
+    padding: 0px !important;
+    border-radius: 0px;
+}
+
+.vitro-table-view-detail > div > div {
+    padding: 24px;
+}
+
+.vitro-form-login {
+    min-height: 552px;
+}
+
+    .vitro-form-login .vitro-logo {
+        background: url('../img/customer-logo.svg') no-repeat;
+        background-position: center;
+        background-size: 50%;
+    }
+
+    .vitro-form-login .vitro-heading-text {
+        margin: 18px 0 24px 0;
+        min-height: 60px;
+        color: #828282;
+    }
+
+        .vitro-form-login .vitro-heading-text strong {
+            color: #4F4F4F;
+        }
+
+        .vitro-form-login .vitro-heading-text p {
+            color: #BDBDBD;
+        }
+
+    .vitro-form-login .vitro-button {
+        width: 300px;
+        height: 40px;
+        font-weight: 500;
+        line-height: 16px;
+        font-size: 14px;
+        margin: 8px 0 24px 0;
+    }
+
+    .vitro-form-login .vitro-signup {
+        color: #828282;
+        font-size: inherit;
+    }
+
+    .vitro-form-login .vitro-link {
+        color: #BDBDBD;
+    }
+
+        .vitro-form-login .vitro-link:hover {
+            cursor: pointer;
+            color: #ff5b2d;
+        }
+
+.vitro-control .vitro-icon-control {
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    min-height: 40px;
+}
+
+.vitro-product-title h1 {
+    font-family: GraphikBold;
+    font-size: 22px;
+    line-height: 22px;
+    color: #2e2e2e;
+    display: block;
+    text-decoration: none;
+    text-shadow: 0 1px 1px #9e9e9e;
+    width: auto;
+    overflow-wrap: break-word;
+    margin: 0;
+}
+
+.vitro-product-title h1 {
+    font-family: GraphikBold;
+    font-size: 22px;
+    line-height: 22px;
+    color: #2e2e2e;
+    display: block;
+    text-decoration: none;
+    text-shadow: 0 1px 1px #9e9e9e;
+    width: auto;
+    overflow-wrap: break-word;
+    margin: 0;
+}
+
+    .vitro-product-title h1:last-child {
+        color: #ff5b2d;
+    }
+
+.vitro-table-view-detail > .ps > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px 12px 24px
+}
+
+.vitro-table-view-detail > .ps .vitro-flex-full {
+    flex: 1 1;
+}
+
+#PlannerTableViewDetail {
+    height:100%;
+}
+
+.vitro-control .vitro-label {
+    font-size: inherit;
+    margin-left: 0;
+}
+
+
+.vitro-audit-data {
+    margin-top: 16px;
+    display: flex;
+    font-size: 9pt;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    .vitro-audit-data .vitro-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .vitro-audit-data a:hover .vitro-icon-default {
+        display: none;
+    }
+
+    .vitro-audit-data a:hover .vitro-icon-hover {
+        display: block !important;
+    }
+
+.vitro-login-layout {
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.vitro-header .vitro-nav-service .vitro-customer-logo {
+    background: url('../img/customer-logo-small.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 70px;
+}
+
+.vitro-form-login .vitro-logo {
+    background: url('../img/customer-logo.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.vitro-main > div.vitro-start-page-white {
+    background: #fff;
+}
+
+
+.k-i-close:not(.k-hidden) {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHZpZXdCb3g9IjAgMCA2NCA2NCI+DQo8cG9seWdvbiBmaWxsPSIjOTk5IiBwb2ludHM9IjQ4LDIxLjcgNDIuMywxNiAzMiwyNi4zIDIxLjcsMTYgMTYsMjEuNyAyNi4zLDMyIDE2LDQyLjMgMjEuNyw0OCAzMiwzNy43IDQyLjMsNDggNDgsNDIuMyAzNy43LDMyIi8+DQo8L3N2Zz4=);
+    font-size: 17px !important;
+    opacity: .6;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.k-i-close:hover{
+    opacity: 1 !important;
+}
+
+.k-list .k-item.k-state-selected{
+    background-color: #E0E0E0;
+    color: #222d44;
+    border: none;
+    box-shadow: none; 
+}
+
+.k-list .k-item.k-state-selected.k-state-hover{
+    background: #E0E0E0;
+    color: #222d44;
+}
+
+.k-multiselect{
+    border-radius: 6px;
+}
+
+.k-list .k-item.k-state-focused{
+    box-shadow: inset 0 0 0 .5px rgb(0 0 0 / 13%);
+}
+
+.k-popup{
+    border-width: 0;
+}
+
+.table-view-custom-edit {
+    position: absolute;
+    z-index: 10000;
+}
+
+.table-view-custom-edit_hidden {
+    opacity: 0;
+}
+
+.table-view-custom-edit .vitro-lookup-picker {
+    padding: 0px;
+    background: white;
+}
+
+.table-view-custom-edit .vitro-right {
+    top: 3px !important;
+}
+
+.table-view-custom-edit .vitro-toggle {
+    display: none;
+}
+
+
+
+
+
+.button-cancel {
+    background-color: white;
+    border: 1px solid #0099ff;
+    color: #0099ff;
+    ;
+}
+
+    .button-cancel:hover {
+        background-color: #FF6B5B !important;
+    }

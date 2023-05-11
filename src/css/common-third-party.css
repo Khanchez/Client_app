@@ -1,0 +1,833 @@
+﻿.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle,
+.btn-primary:not(:disabled):not(.disabled):focus, .show > .btn-primary.dropdown-toggle {
+    color: #e0e0e0;
+}
+
+.modal-dialog {
+    margin: 0;
+}
+
+/* kendo picker */
+.k-timepicker .k-picker-wrap .k-input,
+.k-datepicker .k-picker-wrap .k-input {
+    height: 32px;
+    font-size: 10pt;
+    color: #222d44;
+}
+
+.vitro-control.disabled .k-datepicker .k-picker-wrap {
+    background: #F5F6FA;
+}
+
+.vitro-control > .k-widget .k-picker-wrap > input::-moz-selection {
+    background: #0097ff;
+}
+
+.vitro-control > .k-widget .k-picker-wrap > input::selection {
+    background: #0097ff;
+}
+
+.vitro-control > .k-widget .k-picker-wrap.k-state-default > input {
+    border-right: none !important;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.vitro-control.disabled > .k-widget .k-picker-wrap.k-state-default > .k-select {
+    background-color: rgb(245, 246, 250)
+}
+
+    .vitro-control.disabled > .k-widget .k-picker-wrap.k-state-default > .k-select > .k-icon {
+        color: #222d44
+    }
+
+.vitro-control > .k-widget .k-picker-wrap.k-state-default > .k-select {
+    border: 1px solid #e0e0e0;
+    border-left: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background: #fff;
+}
+
+    .vitro-control > .k-widget .k-picker-wrap.k-state-default > .k-select > .k-icon {
+        color: #0097ff
+    }
+
+.vitro-control > .k-widget > .k-picker-wrap {
+    border: none;
+    background: none;
+}
+
+.k-dateinput, .k-datepicker, .k-datetimepicker, .k-timepicker {
+    width: 100%;
+}
+
+.k-time-header .k-time-now,
+.k-action-buttons .k-primary,
+.k-calendar .k-calendar-header .k-today,
+.k-calendar .k-content .k-today,
+.k-time-container .k-item:hover {
+    color: #0097ff;
+}
+
+.k-animation-container, .k-animation-container > div.k-timeselector,
+.vitro-control-container .k-calendar-container {
+    border-radius: 6px;
+    top: 8px;
+}
+
+.k-time-header {
+    padding: 8px 8px 8px 16px;
+    line-height: 32px;
+}
+
+.k-calendar {
+    border-radius: 6px;
+    padding: 4px 8px;
+}
+
+    .k-calendar .k-footer .k-nav-today {
+        display: none;
+    }
+
+    .k-calendar .k-state-selected .k-link,
+    .k-calendar .k-state-selected.k-state-hover .k-link {
+        border-color: #0097ff;
+        background-color: #0097ff;
+        color: #fff;
+        border-radius: 8px;
+        border-color: #fff;
+        box-shadow: none;
+    }
+
+    .k-calendar td.k-link {
+        border: none;
+    }
+
+    .k-calendar .k-nav-next, .k-calendar .k-nav-prev,
+    .k-calendar .k-nav-next:hover, .k-calendar .k-nav-prev:hover {
+        background: #fff;
+        color: #BDBDBD;
+    }
+
+    .k-calendar .k-link.k-nav-fast:hover {
+        background: #fff;
+        color: #0097ff;
+    }
+
+.vitro-control-container .k-calendar-container {
+    right: 0;
+}
+
+.k-calendar .k-header {
+    box-shadow: none;
+    border: none;
+    background: #fff;
+}
+
+.k-datepicker .vitro-control-container .k-timepicker .vitro-control-container {
+    z-index: 1010;
+    width: 100% !important;
+}
+
+@media (min-width: 800px) {
+    .k-animation-container, .k-animation-container > div.k-timeselector {
+        width: 100% !important;
+    }
+}
+
+.k-popup {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.k-button.k-time-now {
+    background: #0097ff !important;
+    border-radius: 6px;
+    color: #fff;
+    padding: 0 12px;
+    font-size: 10pt;
+    outline: none;
+}
+
+    .k-button.k-time-now:hover, .k-button.k-time-now:active, .k-button.k-time-now:focus {
+        background: rgba(0, 151, 255, .8);
+        color: #fff !important;
+    }
+
+
+.k-action-buttons .k-button {
+    padding: 9px 16px;
+    font-size: 10pt;
+}
+
+    .k-action-buttons .k-button:not(.k-primary) {
+        background: #fff;
+        border-bottom-left-radius: 6px;
+    }
+
+.k-action-buttons .k-primary {
+    background: #0097ff;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 6px;
+    color: white;
+}
+
+    .k-action-buttons .k-primary:hover {
+        background: rgba(0, 151, 255, .8);
+        border-color: rgba(0, 151, 255, .8);
+    }
+
+/* summernote */
+.card-header, textarea.note-codable, .note-statusbar, .note-table-popover.bottom, .note-link-popover.bottom, .note-dropzone {
+    display: none;
+}
+
+.note-editor {
+    width: 100%;
+    border: none;
+}
+
+.note-editable {
+    color: #4F4F4F;
+}
+
+    .note-editable img {
+        max-width: 200px;
+        display: block;
+    }
+
+.note-popover.popover {
+    max-width: 440px;
+    border-radius: inherit;
+    max-height: 150px;
+    overflow-y: auto;
+    border: none;
+    background: #fff;
+    box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+    .note-popover.popover div.note-hint-group {
+        padding: 8px 0;
+    }
+
+.note-hint-item {
+    padding: 4px 8px;
+    font-family: "GraphikRegular";
+    font-size: 10pt;
+    line-height: 11pt;
+    cursor: pointer;
+}
+
+    .note-hint-item:hover {
+        background: #F5F6FA;
+    }
+
+.row {
+    margin: 0px;
+}
+
+.col {
+    padding: 0px;
+}
+
+/* tree grid */
+.TWCellHeader {
+    font-weight: 700;
+}
+
+.TWMain, .TWMain * {
+    font-size: 9pt;
+    font-family: "GraphikRegular";
+}
+
+.TWMenuMain {
+    z-index: 1000;
+}
+
+.TWVScroll {
+    width: 17px;
+}
+
+.TWCellHeader {
+    font-family: "GraphikMedium" !important;
+    font-weight: normal !important;
+    background: #fff;
+}
+
+.TWCellFilter, .TWCellFilterPanel {
+    background-color: #F5F6FA;
+}
+
+.TWCellBase {
+    color: #222d44;
+}
+
+.TWFilterRow td, .TWDataRow td {
+    letter-spacing: -0.24px;
+}
+
+.TWDataRow td {
+    padding: 1px 3px 0px 3px !important;
+}
+
+.TWNoRight.TWHeaderText, .TWNoRight .TWHeaderText {
+    white-space: normal;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.TWType {
+    padding: 6px 10px 6px 10px;
+}
+
+td.vitro-planner-warning-end-date-low {
+    color: #3D7FC2 !important;
+}
+
+td.vitro-planner-warning-end-date-high {
+    color: #FF3000 !important
+}
+
+.vitro-planner-task-status-red .GWGanttMainIn,
+.vitro-planner-task-status-red .GWGanttGroupOutLeft,
+.vitro-planner-task-status-red .GWGanttGroupOutRight {
+    background-color: #FF3000;
+}
+
+.vitro-table-full-width {
+    width: 100%
+}
+
+.GWGanttMark {
+    background: #fffc85 !important;
+    opacity: 0.4 !important;
+}
+
+.TWPageMessage, .GridMessage, .vitro-tableview-progress-message {
+    border: none !important;
+    box-shadow: none !important;
+    background: url(../img/ico-preloader.svg) no-repeat;
+    background-position: center 20px;
+    background-size: 24px 24px;
+    padding-top: 56px !important;
+    text-align: center !important;
+    font-family: "GraphikRegular" !important;
+    font-size: 10pt !important;
+}
+
+    .vitro-tableview-progress-message.vitro-table-view-export-message {
+        background-color: #fff;
+        border: 1px solid #ff5b2d !important;
+    }
+
+.TWMessage {
+    font-family: inherit;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    font-size: inherit;
+    padding: 16px;
+    min-width: 240px;
+    white-space: normal;
+    text-align: left;
+    box-shadow: none;
+    z-index: 100000;
+    top: 50% !important;
+}
+
+    .TWMessage .vitro-flex {
+        align-items: center;
+        font-family: "GraphikRegular";
+        font-size: 10pt;
+    }
+
+    .TWMessage .TWMessageButtons {
+        display: flex;
+        width: 100%;
+        padding: 0;
+        justify-content: flex-end;
+        margin: 0;
+    }
+
+    .TWMessage .vitro-icon-before {
+        background: url('../img/ico-question.svg');
+        background-size: cover;
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+        padding-right: 0;
+        flex-shrink: 0;
+    }
+
+    .TWMessage .TWMessageButtons > button, .TWLow .TWMenuButton, .TWProgressButtons > button {
+        height: 32px;
+        line-height: 32px;
+        background: #0097ff;
+        color: #fff;
+        width: auto;
+        padding: 0 12px;
+        min-width: 96px;
+        margin: 8px 0 0 8px;
+        border-radius: 8px;
+        border: none;
+        padding: 0 !important;
+        font-weight: 500;
+        outline: none;
+        font-family: GraphikRegular;
+        font-size: 10pt;
+    }
+
+        .TWMessage .TWMessageButtons > button:hover, .TWLow .TWMenuButton:hover, .TWProgressButtons > button:hover {
+            background: rgba(0, 151, 255, .8);
+            border-color: transparent;
+        }
+
+        .TWMessage .TWMessageButtons > button:first-child {
+            margin-left: 0;
+        }
+
+        .TWMessage .TWMessageButtons > button:last-child,
+        .TWMenuFoot > button:last-child,
+        .TWProgressButtons > button:last-child {
+            background: #fff;
+            color: #0097ff;
+            border: 1px solid #0097ff;
+        }
+
+            .TWMessage .TWMessageButtons > button:last-child:hover,
+            .TWMenuFoot > button:last-child:hover,
+            .TWProgressButtons > button:last-child {
+                background: #fff;
+                border-color: rgba(0, 151, 255, .8);
+                color: rgba(0, 151, 255, .8);
+            }
+
+.TWMenuFoot {
+    text-align: right;
+}
+
+.TWTaskTemplateCheck2Left {
+    background-image: url(../img/ico-tableview-checkbox-intermediate.svg) !important;
+}
+
+.TWCheck0Left,
+.TWMenuUncheckedIconLeft, .TWMenuUncheckedIconRight,
+.TWBool0, .TWBool0RO {
+    background-image: url(../img/ico-tableview-checkbox-empty.svg) !important;
+}
+
+.TWCheck1Left,
+.TWMenuCheckedIconLeft, .TWMenuCheckedIconRight,
+.TWFilter1, .TWGroup1, .TWSearch1,
+.TWBool1, .TWBool1RO {
+    background-image: url(../img/ico-tableview-checkbox-full.svg) !important;
+}
+
+.TWPickEmpty {
+    background-image: url(../img/ico-tableview-calendar-empty.svg) !important;
+}
+
+.TWSort1Left, .TWSort1Right,
+.TWSort2Left, .TWSort2Right,
+.TWSort3Left, .TWSort3Right {
+    background-image: url(../img/ico-tableview-sort-top.svg) !important;
+}
+
+.TWSort4Left, .TWSort4Right,
+.TWSort6Left, .TWSort6Right {
+    background-image: url(../img/ico-tableview-sort-bottom.svg) !important;
+}
+
+.TWP0200, .TWPx200, .TWP02x0, .TWP020x, .TWPx2x0, .TWPx20x, .TWP02xx, .TWPx2xx, .TWPanelSelectOn {
+    background-image: url(../img/ico-tableview-dot-selected.svg) !important;
+    background-position: 50% !important;
+}
+
+.TWFilter12Left, .TWFilter12Right, .TWFilter12Menu {
+    background-image: url(../img/ico-tableview-contains-not.svg) !important;
+}
+
+.TWFilter11Left, .TWFilter11Right, .TWFilter11Menu {
+    background-image: url(../img/ico-tableview-contains.svg) !important;
+}
+
+.TWFilter10Left, .TWFilter10Right, .TWFilter10Menu {
+    background-image: url(../img/ico-tableview-end-with-not.svg) !important;
+}
+
+.TWFilter9Left, .TWFilter9Right, .TWFilter9Menu {
+    background-image: url(../img/ico-tableview-end-with.svg) !important;
+}
+
+.TWFilter8Left, .TWFilter8Right, .TWFilter8Menu {
+    background-image: url(../img/ico-tableview-start-with-not.svg) !important;
+}
+
+.TWFilter7Left, .TWFilter7Right, .TWFilter7Menu {
+    background-image: url(../img/ico-tableview-start-with.svg) !important;
+}
+
+.TWFilter6Left, .TWFilter6Right, .TWFilter6Menu {
+    background-image: url(../img/ico-tableview-more-equal.svg) !important;
+}
+
+.TWFilter5Left, .TWFilter5Right, .TWFilter5Menu {
+    background-image: url(../img/ico-tableview-more.svg) !important;
+}
+
+.TWFilter4Left, .TWFilter4Right, .TWFilter4Menu {
+    background-image: url(../img/ico-tableview-less-equal.svg) !important;
+}
+
+.TWFilter3Left, .TWFilter3Right, .TWFilter3Menu {
+    background-image: url(../img/ico-tableview-less.svg) !important;
+}
+
+.TWFilter2Left, .TWFilter2Right, .TWFilter2Menu {
+    background-image: url(../img/ico-tableview-not-equal.svg) !important;
+}
+
+.TWFilter1Left, .TWFilter1Right, .TWFilter1Menu {
+    background-image: url(../img/ico-tableview-equal.svg) !important;
+}
+
+.vitro-planner-line-through {
+    text-decoration: line-through;
+}
+
+.TWToolbarRow .TWHtml,
+.TSToolbarRow .TSHtml,
+.TBToolbarRow .TBHtml,
+.TMToolbarRow .TMHtml,
+.TTToolbarRow .TTHtml {
+    display: none;
+}
+
+.TWDisabledHard {
+    top: 0 !important;
+    left: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.vitro-planner-col-id {
+    text-align: left;
+    color: #bdbdbd;
+}
+
+/* gantt color */
+.vitro-planner-task-status-1 .GWGanttMainIn, .vitro-planner-task-status-1 .GWGanttGroupOutLeft, .vitro-planner-task-status-1 .GWGanttGroupOutRight {
+    background-color: #FFFFFF;
+    border: 1px dashed #676767;
+}
+
+.vitro-planner-task-status-17 .GWGanttMainIn, .vitro-planner-task-status-17 .GWGanttGroupOutLeft, .vitro-planner-task-status-17 .GWGanttGroupOutRight {
+    background-color: #FFFFFF;
+    display: none
+}
+
+.vitro-planner-task-status-7 .GWGanttMainIn, .vitro-planner-task-status-7 .GWGanttGroupOutLeft, .vitro-planner-task-status-7 .GWGanttGroupOutRight {
+    background-color: #8ACCCA;
+}
+
+.vitro-planner-task-status-2 .GWGanttMainIn, .vitro-planner-task-status-2 .GWGanttGroupOutLeft, .vitro-planner-task-status-2 .GWGanttGroupOutRight {
+    background-color: #FFFFFF;
+    border: 1px solid #676767;
+}
+
+.vitro-planner-task-status-3 .GWGanttMainIn, .vitro-planner-task-status-3 .GWGanttGroupOutLeft, .vitro-planner-task-status-3 .GWGanttGroupOutRight {
+    background-color: #FFC600;
+}
+
+.vitro-planner-task-status-6 .GWGanttMainIn, .vitro-planner-task-status-6 .GWGanttGroupOutLeft, .vitro-planner-task-status-6 .GWGanttGroupOutRight {
+    background-color: #78D530;
+}
+
+.vitro-planner-task-status-8 .GWGanttMainIn, .vitro-planner-task-status-8 .GWGanttGroupOutLeft, .vitro-planner-task-status-8 .GWGanttGroupOutRight {
+    background-color: #FE9A99;
+}
+
+.vitro-planner-task-status-9 .GWGanttMainIn, .vitro-planner-task-status-9 .GWGanttGroupOutLeft, .vitro-planner-task-status-9 .GWGanttGroupOutRight {
+    background-color: #8ACCCA;
+}
+
+.vitro-planner-task-status-5 .GWGanttMainIn, .vitro-planner-task-status-5 .GWGanttGroupOutLeft, .vitro-planner-task-status-5 .GWGanttGroupOutRight {
+    background-color: #009CF7;
+}
+
+.vitro-planner-task-status-10 .GWGanttMainIn, .vitro-planner-task-status-10 .GWGanttGroupOutLeft, .vitro-planner-task-status-10 .GWGanttGroupOutRight {
+    background-color: #27ae60;
+}
+
+.vitro-planner-task-status-11 .GWGanttMainIn, .vitro-planner-task-status-11 .GWGanttGroupOutLeft, .vitro-planner-task-status-11 .GWGanttGroupOutRight {
+    background-color: #FF6400;
+}
+
+.vitro-planner-task-status-19 .GWGanttMainIn, .vitro-planner-task-status-19 .GWGanttGroupOutLeft, .vitro-planner-task-status-19 .GWGanttGroupOutRight {
+    background-color: #B7B7B7;
+}
+
+.vitro-planner-task-status-4 .GWGanttMainIn, .vitro-planner-task-status-4 .GWGanttGroupOutLeft, .vitro-planner-task-status-4 .GWGanttGroupOutRight {
+    background-color: #B7B7B7;
+}
+
+.vitro-planner-task-status-12 .GWGanttMainIn, .vitro-planner-task-status-12 .GWGanttGroupOutLeft, .vitro-planner-task-status-12 .GWGanttGroupOutRight {
+    background-color: #FFFFFF;
+    border: 1px dashed #676767;
+}
+
+.vitro-planner-task-status-13 .GWGanttMainIn, .vitro-planner-task-status-13 .GWGanttGroupOutLeft, .vitro-planner-task-status-13 .GWGanttGroupOutRight {
+    background-color: #FFFFFF;
+    border: 1px solid #676767;
+}
+
+.vitro-planner-task-status-14 .GWGanttMainIn, .vitro-planner-task-status-14 .GWGanttGroupOutLeft, .vitro-planner-task-status-14 .GWGanttGroupOutRight {
+    background-color: #56ccf2;
+}
+
+.vitro-planner-task-status-15 .GWGanttMainIn, .vitro-planner-task-status-15 .GWGanttGroupOutLeft, .vitro-planner-task-status-15 .GWGanttGroupOutRight {
+    background-color: #eb6767;
+}
+
+.vitro-planner-task-status-16 .GWGanttMainIn, .vitro-planner-task-status-16 .GWGanttGroupOutLeft, .vitro-planner-task-status-16 .GWGanttGroupOutRight {
+    background-color: #828282;
+}
+
+/* tree grid calendar */
+.TWPickMain, .TWPickMain .TWPickOuter {
+    border-radius: 6px;
+}
+
+.TWPickOuter .TWPickMY {
+    background: #fff;
+    color: #222d44;
+}
+
+    .TWPickOuter .TWPickMY > span {
+        line-height: 36px;
+        font-size: 10pt;
+        font-weight: normal;
+        display: block;
+        background: none;
+        margin: 0 30px;
+        padding: 0px;
+        text-transform: capitalize;
+    }
+
+        .TWPickOuter .TWPickMY > span:hover {
+            color: #0097ff;
+        }
+
+.TWPickSel, .TWPick2MSel, .TWPick2YSel,
+.TWPickSel, .TWPick2MSel, .TWPickSelHover {
+    background: #0097ff;
+    color: #fff;
+}
+
+.TWPickOuter .TWPickBL, .TWPickOuter .TWPickBR {
+    margin-top: 8px;
+    background-size: 22px 22px;
+}
+
+.TWPickOuter .TWPickRowW .TWPickCell {
+    padding-bottom: 0px
+}
+
+.TWPickNow {
+    background: #fff;
+    color: #0097ff;
+    font-family: 'GraphikMedium';
+}
+
+.TWLow .TWPickCell {
+    width: 30px;
+    height: 30px;
+}
+
+    .TWLow .TWPickCell > div {
+        line-height: 26px;
+        border-radius: 8px;
+    }
+
+.TWPickWDN, .TWPickWNE {
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.TWPickOM, .TWPickOMNE, .TWPickWDN, .TWPickWNE {
+    color: #bdbdbd;
+}
+
+/* treegrid enum */
+.TWEnumMenuHeader {
+    border-radius: 0;
+    border-bottom: 1px solid #fff;
+    z-index: 10001;
+}
+
+.TWMenuMainBottom {
+    margin-top: 1px;
+    border-radius: 6px 0px 6px 6px;
+}
+
+.TWEnumMenuMainBottom {
+    margin-top: -1px;
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0px 4px 4px 1px #ddd;
+}
+
+    .TWEnumMenuMainBottom > div, .TWMenuMainBottom > div {
+        border-radius: 0 0 6px 6px;
+        border-top: 1px solid #fff;
+    }
+
+.TWMenuMainBottom > div {
+    border-radius: 0 0 6px 6px;
+}
+
+.TWLow .TWMenuFoot {
+    padding: 3px 3px 5px 3px;
+}
+
+
+.TWMenuMainBottom.TWEnumMenuMainBottom {
+    border-radius: 0 0 6px 6px;
+    z-index: 10002;
+}
+
+    .TWMenuMainBottom.TWEnumMenuMainBottom > div {
+        border-radius: 0 0 6px 6px;
+    }
+
+.TWEnumLeft, .TWLow .TWEnumHeaderLeft {
+    background-position: right !important;
+    padding-left: 6px !important;
+}
+
+.TWEnumMenuBody .TWEnumMenuFocus {
+    color: #0097ff;
+    background: #fff !important;
+}
+
+.TWEnumMenuBody .TWEnumMenuHover,
+.TWMenuHover {
+    background: #F4F4F4 !important
+}
+
+.TWLow .TWMenuButton {
+    min-width: 80px;
+    font-size: 9pt;
+    min-width: 80px;
+    font-size: 9pt;
+    height: 26px;
+    line-height: 26px;
+    margin: 4px;
+}
+
+.TWFocusRowBackground {
+    background: #e0e0e0;
+}
+
+.HideCol0IsFavorite.TWCellHeader {
+    color: transparent;
+}
+
+.HideCol0IsFavorite.vitro-tableview-favorite-0, .HideCol0IsFavorite.TWCell.TWBool0 {
+    background-image: url(../img/ico-favorite.svg) !important;
+}
+
+.HideCol0IsFavorite.vitro-tableview-favorite-2, .HideCol0IsFavorite.TWCell.TWBool1 {
+    background-image: url(../img/ico-favorite-orange.svg) !important;
+}
+
+.TWFilter0Value u.TWFilter1, .TWFilter0Value u.TWFilter0,
+.TWCellHeaderPanel .TWPanelDelete {
+    display: none;
+}
+
+.TWHintHeaderOuter > div,
+.TWHintDataOuter > div {
+    overflow: visible !important;
+}
+
+.TWProgressOuter {
+    background-color: #fff;
+    width: 220px !important;
+}
+
+.TWProgressInner {
+    height: 26px !important;
+    width: 100% !important;
+    background: url(../img/ico-preloader.svg) no-repeat;
+    background-position: center;
+}
+
+.TWProgressMain {
+    text-align: center;
+}
+
+.TWProgressButtons {
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+    .TWProgressButtons > button {
+        min-width: 80px;
+        font-size: 9pt;
+        height: 26px;
+        line-height: 26px;
+        margin: 4px;
+        padding: 0 8px !important;
+    }
+
+.TWEnumMenuBody {
+    max-width: 600px;
+}
+
+.TWMenuItemText {
+    white-space: normal;
+}
+
+.popover {
+    z-index: 10000;
+}
+
+.popover {
+    font-family: inherit;
+    border-radius: 8px;
+    border: 1px solid #ff5b2d;
+    font-size: inherit;
+}
+
+    .popover > .arrow::before, .bs-popover-top > .arrow::before {
+        border-top-color: #ff5b2d;
+    }
+
+    .popover > .popover-body {
+        text-align: left;
+        color: inherit;
+        padding: 16px;
+    }
+
+    .popover .popover-body .vitro-flex {
+        align-items: center;
+    }
+
+.TWMenuItem.TWCfgMenuItem#TGMenu-0-style {
+    display: none;
+}
+
+.TWEditInput {
+    background: white;
+}
+
+.TWCellBase.vitro-table-view-deleted {
+    color: #BDBDBD;
+}
+
+.ps__rail-y, .ps__rail-x {
+    padding: 0px!important;
+}

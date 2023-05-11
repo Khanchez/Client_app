@@ -1,0 +1,4 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 64 64">
+  <circle fill="white" stroke="#ff5b2d" stroke-width="4" cx="30" cy="30" r="20"/>
+  <circle fill="#ff5b2d" cx="30" cy="30" r="12"/>
+</svg>

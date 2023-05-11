@@ -1,0 +1,43 @@
+{
+  "topItemList": [
+    {
+      "key": "top",
+      "itemList": [
+        {
+          "text": "Home",
+          "icon": {
+            "defaultUrl": "icons/1.svg"
+          },
+          "link": "/"
+        },
+        {
+          "text": "List 1",
+          "icon": {
+            "defaultUrl": "icons/2.svg"
+          },
+          "link": "/List/3B1E0B19-6BB4-439A-B7D8-AD6A0060F79F"
+        },
+        {
+          "text": "OrgStructure",
+          "icon": {
+            "defaultUrl": "icons/2.svg"
+          },
+          "link": "/List/E3A94BDE-0CA9-456F-B338-4465D40389EE"
+        },
+        {
+          "text": "Statuses",
+          "icon": {
+            "defaultUrl": "icons/1.svg"
+          },
+          "link": "/List/E2FA5F6B-BB9B-4A38-9D6C-03170F5B2E1D"
+        }
+      ]
+    }
+  ],
+  "bottomItemList": [
+    {
+      "key": "bottom",
+      "itemList": []
+    }
+  ]
+}

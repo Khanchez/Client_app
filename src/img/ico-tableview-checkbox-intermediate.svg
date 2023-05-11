@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" preserveAspectRatio="none">
+  <g>
+    <title>Layer 1</title>
+    <rect id="svg_1" ry="5" rx="5" height="40" width="40" y="10" x="10" stroke-width="2" stroke="#bdbdbd" fill="#fff"/>
+    <polyline id="svg_2" points="16,28 28,38 44,20" stroke-width="6" stroke="#fff" fill="#FFF"/>
+    <rect stroke-width="0" stroke-dasharray="2,2" id="svg_3" height="34.93973" width="35.54214" y="12.4217" x="12.4217" stroke="#fff" fill="#FFF"/>
+    <rect stroke="#FFF" stroke-width="5" id="svg_9" height="29.90774" width="30.83" y="14.9381" x="14.60872" fill="#ff5b2d"/>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+{
+    Body: [[
+        { FistName: 'Иван', SecondName: 'Иванов', LastName: 'Олегович', "BirthDate": '12.02.1995', "Department": 'IT' },
+        { FistName: 'Олег', SecondName: 'Петров', LastName: 'Петрович', "BirthDate": '12.02.1995', "Department": 'IT' },
+        { FistName: 'Игорь', SecondName: 'Сидоров', LastName: 'Иванович', "BirthDate": '12.02.1995', "Department": 'IT' },
+        { FistName: 'Наталья', SecondName: 'Мотузко', LastName: 'Максимовна', "BirthDate": '12.02.1995', "Department": 'Отдел кадров' },
+        { FistName: 'Илья', SecondName: 'Курочкин', LastName: 'Михайлович', "BirthDate": '12.02.1995', "Department": 'Отдел кадров' },
+        { FistName: 'Владимир', SecondName: 'Царь', LastName: 'Николаевич', "BirthDate": '12.02.1995', "Department": 'Менеджмент' },
+        { FistName: 'Михаил', SecondName: 'Прохоров', LastName: 'Владимирович', "BirthDate": '12.02.1995', "Department": 'Менеджмент' },
+        { FistName: 'Николай', SecondName: 'Кукушкин', LastName: 'Викторович', "BirthDate": '12.02.1995', "Department": 'Менеджмент' },
+    ]]
+}
