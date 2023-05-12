@@ -33,19 +33,19 @@ const EmployeeDetails: FunctionComponent<IEmployeeProps> = (props: IEmployeeProp
 
     return (
         <div>
-            <Input label={'Фамилия'} value={currentEmployee.secondName} onChange={(e) => {currentEmployee.secondName = e.target.value}}>
+            <Input label={'Фамилия'} value={currentEmployee.secondName} onChange={(e) => { currentEmployee.secondName = e.target.value }} onBlur={updateEmployee}>
 
             </Input>
-            <Input label={'Имя'} value={currentEmployee.firstName} onChange={(e) => {currentEmployee.firstName = e.target.value}}>
+            <Input label={'Имя'} value={currentEmployee.firstName} onChange={(e) => { currentEmployee.firstName = e.target.value }} onBlur={updateEmployee}>
             </Input>
-            <Input label={'Отчество'} value={currentEmployee.lastName} onChange={(e) => {currentEmployee.lastName = e.target.value}}>
+            <Input label={'Отчество'} value={currentEmployee.lastName} onChange={(e) => { currentEmployee.lastName = e.target.value }} onBlur={updateEmployee}>
             </Input>
             <div>
 
-                <ButtonGroup>
+ {/*               <ButtonGroup>
                     <Button  text={"Сохранить"} onClick={updateEmployee}></Button>
                     <Button className='button-cancel'  text={"Отмена"}></Button>
-                </ButtonGroup>
+                </ButtonGroup>*/}
             </div>
         </div>
         

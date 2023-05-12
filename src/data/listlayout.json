@@ -18,6 +18,7 @@
     "DateStrings": "1",
     "ExternalAlign": "1",
     "Style": "White",
+
     "GroupTree": 1,
     "GroupedLap": 0,
     "MainCol": "TaskTitle",
@@ -29,7 +30,7 @@
   "Cols": [
     {
       "Name": "Panel",
-      "CanEdit": "0",
+      "CanEdit": "1",
       "CanSort": "0",
       "WidthLap": "0",
       "Width": 25,
@@ -37,7 +38,7 @@
     },
     {
       "Name": "FirstName",
-      "CanEdit": "0",
+      "CanEdit": "1",
       "CanSort": "0",
       "WidthLap": "0",
       "RelWidth": 1,
@@ -45,7 +46,7 @@
     },
     {
       "Name": "SecondName",
-      "CanEdit": "0",
+      "CanEdit": "1",
       "CanSort": "0",
       "WidthLap": "0",
       "RelWidth": 1,
@@ -53,7 +54,7 @@
     },
     {
       "Name": "LastName",
-      "CanEdit": "0",
+      "CanEdit": "1",
       "CanSort": "0",
       "WidthLap": "0",
       "RelWidth": 1,
@@ -61,7 +62,7 @@
     },
     {
       "Name": "Birthdate",
-      "CanEdit": "0",
+      "CanEdit": "1",
       "CanSort": "0",
       "WidthLap": "0",
       "RelWidth": 1,
@@ -69,7 +70,7 @@
     },
     {
       "Name": "Department",
-      "CanEdit": "0",
+      "CanEdit": "1",
       "CanSort": "0",
       "WidthLap": "0",
       "RelWidth": 1,

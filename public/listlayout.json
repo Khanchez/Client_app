@@ -1,7 +1,7 @@
 ﻿{
   {
     "Cfg": {
-      "id": "vitro-table-view-list-item",
+      "id": "CommonTable",
       "Filtering": 0,
       "Grouping": 1,
       "Paging": 0,

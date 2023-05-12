@@ -226,8 +226,3 @@ export const CorePageLayout = props => {
     }</>;
 }
 
-/*let Main = props => (
-    <div className="vitro-main" id="vitro-main">
-        {props.children}
-    </div>
-);*/
