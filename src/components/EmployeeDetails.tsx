@@ -42,10 +42,7 @@ const EmployeeDetails: FunctionComponent<IEmployeeProps> = (props: IEmployeeProp
             </Input>
             <div>
 
- {/*               <ButtonGroup>
-                    <Button  text={"Сохранить"} onClick={updateEmployee}></Button>
-                    <Button className='button-cancel'  text={"Отмена"}></Button>
-                </ButtonGroup>*/}
+
             </div>
         </div>
         
